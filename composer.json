@@ -1,0 +1,23 @@
+{
+    "name": "payment/saferpay-buzz",
+    "type": "library",
+    "description": "Saferpay payment service library - buzz",
+    "keywords": ["saferpay", "payment", "e-commerce", "buzz"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dominik Zogg",
+            "email": "dominik.zogg@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "kriswallsmith/buzz": "0.7",
+        "payment/saferpay": "master"
+    },
+    "autoload": {
+        "psr-0": { "Payment\\Saferpay\\Http\\Client": "" }
+    },
+    "target-dir": "Payment/Saferpay/Http/Client",
+    "minimum-stability": "dev"
+}
