@@ -15,6 +15,9 @@
         "kriswallsmith/buzz": "0.7",
         "payment/saferpay": "master"
     },
+    "provide": {
+        "payment/http-client": "dev-master"
+    },
     "autoload": {
         "psr-0": { "Payment\\Saferpay\\Http\\Client": "" }
     },
