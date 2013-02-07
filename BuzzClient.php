@@ -50,7 +50,7 @@ class BuzzClient implements HttpClientInterface
 
             $rawContentType = $originalResponse->getHeader('Content-Type');
 
-            return new Response(
+            return new NullResponse(
                 $originalResponse->getStatusCode(),
                 substr($rawContentType, 0, strpos($rawContentType, ';')),
                 $originalResponse->getContent(),
