@@ -1,8 +1,8 @@
 {
-    "name": "payment/saferpay-buzz",
+    "name": "payment/httpclient-buzz",
     "type": "library",
-    "description": "Saferpay payment service library - buzz",
-    "keywords": ["saferpay", "payment", "e-commerce", "buzz"],
+    "description": "http client bridge for buzz",
+    "keywords": ["httpclient", "buzz"],
     "license": "MIT",
     "authors": [
         {
@@ -12,15 +12,15 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "kriswallsmith/buzz": "0.7",
-        "payment/saferpay": "master"
+        "payment/httpclient": "dev-master",
+        "kriswallsmith/buzz": "0.7"
     },
     "provide": {
-        "payment/http-client": "dev-master"
+        "payment/httpclient-implementation": "dev-master"
     },
     "autoload": {
-        "psr-0": { "Payment\\Saferpay\\Http\\Client": "" }
+        "psr-0": { "Payment\\HttpClient": "" }
     },
-    "target-dir": "Payment/Saferpay/Http/Client",
+    "target-dir": "Payment/HttpClient",
     "minimum-stability": "dev"
 }

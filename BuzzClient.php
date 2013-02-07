@@ -1,6 +1,6 @@
 <?php
 
-namespace Payment\Saferpay\Http\Client;
+namespace Payment\HttpClient;
 
 use Buzz\Browser;
 use Buzz\Client\Curl;
