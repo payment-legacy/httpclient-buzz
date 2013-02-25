@@ -12,7 +12,7 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "payment/httpclient": "dev-master",
+        "payment/httpclient": "1.0.*",
         "kriswallsmith/buzz": "0.7"
     },
     "provide": {
@@ -21,6 +21,5 @@
     "autoload": {
         "psr-0": { "Payment\\HttpClient": "" }
     },
-    "target-dir": "Payment/HttpClient",
-    "minimum-stability": "dev"
+    "target-dir": "Payment/HttpClient"
 }
