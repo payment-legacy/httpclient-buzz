@@ -48,11 +48,9 @@ class BuzzClient implements HttpClientInterface
             $originalResponse = $this->getClient()->call($url, $method, $headers, $content);
             /** @var BuzzResponse $originalResponse */
 
-            $rawContentType = $originalResponse->getHeader('Content-Type');
-
             return new NullResponse(
                 $originalResponse->getStatusCode(),
-                substr($rawContentType, 0, strpos($rawContentType, ';')),
+                $originalResponse->getHeader('Content-Type'),
                 $originalResponse->getContent(),
                 $originalResponse->getHeaders()
             );
