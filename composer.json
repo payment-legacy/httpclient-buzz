@@ -21,5 +21,6 @@
     "autoload": {
         "psr-0": { "Payment\\HttpClient": "" }
     },
-    "target-dir": "Payment/HttpClient"
+    "target-dir": "Payment/HttpClient",
+    "abandoned": true
 }
